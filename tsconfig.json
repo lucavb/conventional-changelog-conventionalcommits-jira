@@ -9,7 +9,7 @@
         "forceConsistentCasingInFileNames": true,
         "importHelpers": true,
         "lib": ["ES2016", "DOM"],
-        "module": "commonjs",
+        "module": "ESNext",
         "moduleResolution": "node",
         "noFallthroughCasesInSwitch": true,
         "noImplicitOverride": true,
@@ -24,9 +24,9 @@
         "sourceMap": true,
         "strict": true,
         "strictFunctionTypes": true,
-        "target": "ES2016",
+        "target": "ES2017",
         "typeRoots": ["node_modules/@types", "typings"],
-        "useUnknownInCatchVariables": true
+        "useUnknownInCatchVariables": true,
     },
-    "include": ["src"]
+    "include": ["src"],
 }

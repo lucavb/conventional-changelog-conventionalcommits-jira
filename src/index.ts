@@ -1,3 +1,3 @@
 import { conventionalCommitConfig } from './config';
 
-export = conventionalCommitConfig;
+export default conventionalCommitConfig;
