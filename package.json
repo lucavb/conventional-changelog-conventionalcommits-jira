@@ -1,8 +1,23 @@
 {
     "name": "conventional-changelog-conventionalcommits-jira",
     "version": "2.0.1",
-    "description": "",
+    "description": "A conventional-changelog preset for JIRA ticket references in conventional commits",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lucavb/conventional-changelog-conventionalcommits-jira.git"
+    },
+    "keywords": [
+        "conventional-changelog",
+        "conventionalcommits",
+        "jira",
+        "changelog",
+        "conventional-commits"
+    ],
+    "homepage": "https://github.com/lucavb/conventional-changelog-conventionalcommits-jira",
+    "bugs": {
+        "url": "https://github.com/lucavb/conventional-changelog-conventionalcommits-jira/issues"
+    },
     "files": [
         "CHANGELOG.md",
         "LICENSE.md",
