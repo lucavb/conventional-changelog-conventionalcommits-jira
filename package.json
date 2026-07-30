@@ -28,7 +28,10 @@
     "scripts": {
         "build": "rollup -c",
         "format": "prettier -w --ignore-unknown .",
-        "lint": "eslint src"
+        "lint": "eslint src",
+        "prepack": "npm run build",
+        "publishd": "npm publish --dry-run",
+        "release": "semantic-release"
     },
     "author": {
         "email": "luca.becker@me.com",
@@ -44,11 +47,16 @@
         "@rollup/plugin-node-resolve": "15.2.3",
         "@rollup/plugin-terser": "0.4.4",
         "@rollup/plugin-typescript": "11.1.6",
+        "@semantic-release/commit-analyzer": "^13.0.0",
+        "@semantic-release/github": "^12.0.0",
+        "@semantic-release/npm": "^13.0.0",
+        "@semantic-release/release-notes-generator": "^14.0.0",
         "@typescript-eslint/eslint-plugin": "6.19.1",
         "@typescript-eslint/parser": "6.19.1",
         "eslint": "8.57.0",
         "prettier": "3.2.4",
         "rollup": "4.9.6",
+        "semantic-release": "^25.0.0",
         "typescript": "5.8.3"
     },
     "exports": {
@@ -59,5 +67,8 @@
         },
         "./package.json": "./package.json"
     },
-    "types": "./dist/src/index.d.ts"
+    "types": "./dist/src/index.d.ts",
+    "publishConfig": {
+        "access": "public"
+    }
 }
