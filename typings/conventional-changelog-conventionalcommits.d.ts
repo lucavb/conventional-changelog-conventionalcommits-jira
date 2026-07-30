@@ -22,10 +22,28 @@ declare module 'conventional-changelog-conventionalcommits' {
         headerPartial: string;
         mainTemplate: string;
         noteGroupsSort: string;
+        transform?: (commit: Commit, context: unknown) => Commit | undefined;
+    }
+
+    export interface Commit {
+        header: string | null;
+        notes: CommitNote[];
+        [key: string]: unknown;
+    }
+
+    export interface CommitNote {
+        title?: string;
+        text: string;
     }
 
     export interface RecommendedBumpOpts {
         parserOpts: ParserOptions;
+        whatBump?: (commits: Commit[], options: unknown) => WhatBumpResult;
+    }
+
+    export interface WhatBumpResult {
+        level: number;
+        reason: string;
     }
 
     declare function conventionalChangelogConventionalCommits(
