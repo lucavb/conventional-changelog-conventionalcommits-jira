@@ -38,6 +38,9 @@ jobs:
             - name: Lint
               run: npm run lint
 
+            - name: Tests
+              run: npm run test:ci
+
             - name: Upgrade npm for OIDC trusted publishing
               run: npm install -g npm@latest
 

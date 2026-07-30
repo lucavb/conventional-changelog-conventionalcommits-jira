@@ -31,7 +31,9 @@
         "lint": "eslint src",
         "prepack": "npm run build",
         "publishd": "npm publish --dry-run",
-        "release": "semantic-release"
+        "release": "semantic-release",
+        "test": "vitest run",
+        "test:ci": "vitest run --reporter=verbose"
     },
     "author": {
         "email": "luca.becker@me.com",
@@ -57,7 +59,8 @@
         "prettier": "3.2.4",
         "rollup": "4.9.6",
         "semantic-release": "^25.0.0",
-        "typescript": "5.8.3"
+        "typescript": "5.8.3",
+        "vitest": "^4.1.9"
     },
     "exports": {
         ".": {
